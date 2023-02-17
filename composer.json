@@ -1,0 +1,36 @@
+{
+    "name": "splittlogic/plop",
+    "description": "Plant Organizer and Planner",
+    "keywords": [
+        "splittlogic",
+        "plop"
+    ],
+    "homepage": "https://github.com/splittlogic/plop",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\plop\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\plop\\plopServiceProvider"
+            ],
+            "aliases": {
+                "plop": "splittlogic\\plop\\Facades\\plop"
+            }
+        }
+    }
+}
